@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Course</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/75e9bfdda5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="../CSS/attributestylesheet.css">
+</head>
+
+<body>
+    <!-- Navbar top-->
+    <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-info mb-1 pt-1 pb-1 shadow">
+        <div class="flex-row d-flex">
+            <button type="button" class="navbar-toggler mr-2" data-toggle="offcanvas"
+                title="Toggle responsive left sidebar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="../index.html" title="Private School">Private School</a>
+        </div>
+    </nav>
+    <!-- Navbar side-->
+    <div class="container-fluid" id="main">
+        <div class="row row-offcanvas row-offcanvas-left">
+            <div class="col-md-2 col-lg-2 sidebar-offcanvas pl-0 sidebar d-md-block" id="sidebar" role="navigation">
+                <div class="sidebar-sticky pt-1 mt-3 mb-2 pb-2 bg-light shadow">
+                    <ul class="nav flex-column pl-0">
+                        <li class="nav-item"><a class="nav-link" href="../index.html">Dashboard</a></li>
+                        <li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>
+                        <li class="nav-item"><a class="nav-link" href="students.html">Students</a></li>
+                        <li class="nav-item"><a class="nav-link" href="trainers.html">Trainers</a></li>
+                        <li class="nav-item"><a class="nav-link" href="assignments.html">Assignments</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link sidebar-heading text-muted justify-content-between align-items-center px-3 mt-2 mb-1"
+                                href="#submenu1" data-toggle="collapse" data-target="#submenu1">Associations▾</a>
+                            <ul class="list-unstyled flex-column pl-3 show" id="submenu1" aria-expanded="true">
+                                <li class="nav-item"><a class="nav-link" href="trainers-per-course.html">Trainers per
+                                        Course</a></li>
+                                <li class="nav-item"><a class="nav-link" href="students-per-course.html">Students per
+                                        Course</a></li>
+                                <li class="nav-item"><a class="nav-link" href="assignments-per-course.html">Assignments
+                                        per Course</a></li>
+                                <li class="nav-item"><a class="nav-link active"
+                                        href="assignments-per-student-per-course.html">Assignments per Student per
+                                        Course</a>
+                                </li>
+                            </ul>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Pane -->
+    <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+        <div
+            class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+            <h1 class="h2">Assignments per Student</h1>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <table class="table table-hover">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th colspan="3">CB9-Java-FT</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td type="button" data-toggle="modal" data-target="#viewJavaAssignmentsModal">
+                                    Apostolopoulou Niki
+                                </td>
+                                <td scope="row" class="text-center">
+                                    <button type="button" class="btn btn-sm" data-toggle="modal"
+                                        data-target="#editJavaArrtibuteModal">
+                                        <a class="text-secondary">
+                                            <i class="far fa-edit fa-lg"></i>
+                                        </a>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td type="button" data-toggle="modal" data-target="#viewJavaAssignmentsModal">
+                                    Nikolaou Nikos</td>
+                                <td scope="row" class="text-center">
+                                    <button type="button" class="btn btn-sm" data-toggle="modal"
+                                        data-target="#editJavaArrtibuteModal">
+                                        <a class="text-secondary">
+                                            <i class="far fa-edit fa-lg"></i>
+                                        </a>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td type="button" data-toggle="modal" data-target="#viewJavaAssignmentsModal">
+                                    Petrou Erika</td>
+                                <td scope="row" class="text-center">
+                                    <button type="button" class="btn btn-sm" data-toggle="modal"
+                                        data-target="#editJavaArrtibuteModal">
+                                        <a class="text-secondary">
+                                            <i class="far fa-edit fa-lg"></i>
+                                        </a>
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-sm">
+                    <table class="table table-hover">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th colspan="3">CB9-Java-PT</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td type="button" data-toggle="modal" data-target="#viewJavaAssignmentsModal">
+                                    Aggelopoulos Kostas</td>
+                                <td scope="row" class="text-center">
+                                    <button type="button" class="btn btn-sm" data-toggle="modal"
+                                        data-target="#editJavaArrtibuteModal">
+                                        <a class="text-secondary">
+                                            <i class="far fa-edit fa-lg"></i>
+                                        </a>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td type="button" data-toggle="modal" data-target="#viewJavaAssignmentsModal">
+                                    Alexandrou Giorgos</td>
+                                <td scope="row" class="text-center">
+                                    <button type="button" class="btn btn-sm" data-toggle="modal"
+                                        data-target="#editJavaArrtibuteModal">
+                                        <a class="text-secondary">
+                                            <i class="far fa-edit fa-lg"></i>
+                                        </a>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td type="button" data-toggle="modal" data-target="#viewJavaAssignmentsModal">
+                                    Grigoriou Vasilis</td>
+                                <td scope="row" class="text-center">
+                                    <button type="button" class="btn btn-sm" data-toggle="modal"
+                                        data-target="#editJavaArrtibuteModal">
+                                        <a class="text-secondary">
+                                            <i class="far fa-edit fa-lg"></i>
+                                        </a>
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-sm">
+                    <table class="table table-hover">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th colspan="3">CB9-Java-PT-II</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td type="button" data-toggle="modal" data-target="#viewJavaAssignmentsModal">
+                                    Papadopoulos Nikos</td>
+                                <td scope="row" class="text-center">
+                                    <button type="button" class="btn btn-sm" data-toggle="modal"
+                                        data-target="#editJavaArrtibuteModal">
+                                        <a class="text-secondary">
+                                            <i class="far fa-edit fa-lg"></i>
+                                        </a>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td type="button" data-toggle="modal" data-target="#viewJavaAssignmentsModal">
+                                    Petrou Erika</td>
+                                <td scope="row" class="text-center">
+                                    <button type="button" class="btn btn-sm" data-toggle="modal"
+                                        data-target="#editJavaArrtibuteModal">
+                                        <a class="text-secondary">
+                                            <i class="far fa-edit fa-lg"></i>
+                                        </a>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td type="button" data-toggle="modal" data-target="#viewJavaAssignmentsModal">
+                                    Vournas Panagiotis</td>
+                                <td scope="row" class="text-center">
+                                    <button type="button" class="btn btn-sm" data-toggle="modal"
+                                        data-target="#editJavaArrtibuteModal">
+                                        <a class="text-secondary">
+                                            <i class="far fa-edit fa-lg"></i>
+                                        </a>
+                                    </button>
+                                </td>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <table class="table table-hover">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th colspan="3">CB9-Csharp-FT</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td type="button" data-toggle="modal" data-target="#viewCsharpAssignmentsModal">
+                                    Grigoriou Vasilis</td>
+                                <td scope="row" class="text-center">
+                                    <button type="button" class="btn btn-sm" data-toggle="modal"
+                                        data-target="#editCsharpArrtibuteModal">
+                                        <a class="text-secondary">
+                                            <i class="far fa-edit fa-lg"></i>
+                                        </a>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td type="button" data-toggle="modal" data-target="#viewCsharpAssignmentsModal">
+                                    Psimouli Anna</td>
+                                <td scope="row" class="text-center">
+                                    <button type="button" class="btn btn-sm" data-toggle="modal"
+                                        data-target="#editCsharpArrtibuteModal">
+                                        <a class="text-secondary">
+                                            <i class="far fa-edit fa-lg"></i>
+                                        </a>
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-sm">
+                    <table class="table table-hover">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th colspan="3">CB9-Csharp-PT</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td type="button" data-toggle="modal" data-target="#viewCsharpAssignmentsModal">
+                                    Apostolopoulou Niki</td>
+                                <td scope="row" class="text-center">
+                                    <button type="button" class="btn btn-sm" data-toggle="modal"
+                                        data-target="#editCsharpArrtibuteModal">
+                                        <a class="text-secondary">
+                                            <i class="far fa-edit fa-lg"></i>
+                                        </a>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td type="button" data-toggle="modal" data-target="#viewCsharpAssignmentsModal">
+                                    Vournas Panagiotis</td>
+                                <td scope="row" class="text-center">
+                                    <button type="button" class="btn btn-sm" data-toggle="modal"
+                                        data-target="#editCsharpArrtibuteModal">
+                                        <a class="text-secondary">
+                                            <i class="far fa-edit fa-lg"></i>
+                                        </a>
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-sm">
+                    <table class="table table-hover">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th colspan="3">CB9-Csharp-PT-II</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td type="button" data-toggle="modal" data-target="#viewCsharpAssignmentsModal">
+                                    Grigoriou Vasilis</td>
+                                <td scope="row" class="text-center">
+                                    <button type="button" class="btn btn-sm" data-toggle="modal"
+                                        data-target="#editCsharpArrtibuteModal">
+                                        <a class="text-secondary">
+                                            <i class="far fa-edit fa-lg"></i>
+                                        </a>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td type="button" data-toggle="modal" data-target="#viewCsharpAssignmentsModal">
+                                    Nikolaou Nikos</td>
+                                <td scope="row" class="text-center">
+                                    <button type="button" class="btn btn-sm" data-toggle="modal"
+                                        data-target="#editCsharpArrtibuteModal">
+                                        <a class="text-secondary">
+                                            <i class="far fa-edit fa-lg"></i>
+                                        </a>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td type="button" data-toggle="modal" data-target="#viewCsharpAssignmentsModal">
+                                    Petrou Erika</td>
+                                <td scope="row" class="text-center">
+                                    <button type="button" class="btn btn-sm" data-toggle="modal"
+                                        data-target="#editCsharpArrtibuteModal">
+                                        <a class="text-secondary">
+                                            <i class="far fa-edit fa-lg"></i>
+                                        </a>
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+    </div>
+    <button type="button" class="btn btn-secondary btn-circle btn-lg bottom-right" data-toggle="modal"
+        data-target="#addNewArrtibuteModal">
+        <i class="fas fa-plus"></i>
+    </button>
+
+    <!-- Add Students to Course Modal -->
+    <div class="modal fade" id="addNewArrtibuteModal" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalScrollableTitle">Add Assignment per Course per Student
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form data-toggle="validator">
+                        <div class="form-group">
+                            <label for="courseTitleInput">Course Title</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="courseRadios" id="exampleRadios1"
+                                    value="option1" checked>
+                                <label class="form-check-label" for="exampleRadios1">
+                                    CB9-Java-FT
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="courseRadios" id="exampleRadios2"
+                                    value="option2">
+                                <label class="form-check-label" for="exampleRadios2">
+                                    CB9-Java-PT
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="courseRadios" id="exampleRadios3"
+                                    value="option3">
+                                <label class="form-check-label" for="exampleRadios3">
+                                    CB9-Java-PT-II
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="courseRadios" id="exampleRadios4"
+                                    value="option4">
+                                <label class="form-check-label" for="exampleRadios4">
+                                    CB9-Csharp-FT
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="courseRadios" id="exampleRadios5"
+                                    value="option5">
+                                <label class="form-check-label" for="exampleRadios5">
+                                    CB9-Csharp-PT
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="courseRadios" id="exampleRadios6"
+                                    value="option6">
+                                <label class="form-check-label" for="exampleRadios6">
+                                    CB9-Csharp-PT-II
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Students</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="studentRadios" id="defaultCheck1"
+                                    value="check1" checked>
+                                <label class="form-check-label" for="defaultCheck1">
+                                    Aggelopoulos Kostas
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="studentRadios" id="defaultCheck2"
+                                    value="check2">
+                                <label class="form-check-label" for="defaultCheck2">
+                                    Alexandrou Giorgos
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="studentRadios" id="defaultCheck3"
+                                    value="check3">
+                                <label class="form-check-label" for="defaultCheck3">
+                                    Apostolopoulou Niki
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="studentRadios" id="defaultCheck4"
+                                    value="check4">
+                                <label class="form-check-label" for="defaultCheck4">
+                                    Grigoriou Vasilis
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="studentRadios" id="defaultCheck5"
+                                    value="check5">
+                                <label class="form-check-label" for="defaultCheck5">
+                                    Nikolaou Nikos
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="studentRadios" id="defaultCheck6"
+                                    value="check6">
+                                <label class="form-check-label" for="defaultCheck6">
+                                    Papadopoulos Nikos
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="studentRadios" id="defaultCheck7"
+                                    value="check7">
+                                <label class="form-check-label" for="defaultCheck7">
+                                    Petrou Erika
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="studentRadios" id="defaultCheck8"
+                                    value="check8">
+                                <label class="form-check-label" for="defaultCheck8">
+                                    Psimouli Anna
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="studentRadios" id="defaultCheck9"
+                                    value="check9">
+                                <label class="form-check-label" for="defaultCheck9">
+                                    Vournas Panagiotis
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="editAssignmentSubDateInput">Student's Submission Date</label>
+                            <input type="date" class="form-control" id="editAssignmentSubDateInput">
+                        </div>
+                        <div class="form-group">
+                            <label for="editAssignmentSubTimeInput">Student's Submission Time</label>
+                            <input type="time" class="form-control" id="editAssignmentSubTimeInput">
+                        </div>
+                        <div class="form-group">
+                            <label for="editAssignmentOralMarkInput">Student's Oral Mark</label>
+                            <input type="number" min="0" max="100" class="form-control"
+                                id="editAssignmentOralMarkInput">
+                        </div>
+                        <div class="form-group">
+                            <label for="editAssignmentTotalMarkInput">Student's Total Mark</label>
+                            <input type="number" min="0" max="100" class="form-control"
+                                id="editAssignmentTotalMarkInput">
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Discart</button>
+                            <button class="btn btn-primary" type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JAVA - Edit Assignments per Student Modal -->
+    <div class="modal fade" id="editJavaArrtibuteModal" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="editCourseScrollableTitle">Edit Student's Assignment</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form data-toggle="validator">
+                        <div class="form-group">
+                            <label for="courseTitleInput">Assignments</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="editJavaAttribute1">
+                                <label class="form-check-label" for="editJavaAttribute1">
+                                    Individual Project - Part A
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="editJavaAttribute2">
+                                <label class="form-check-label" for="editJavaAttribute2">
+                                    Individual Project - Part B
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="editJavaAttribute3">
+                                <label class="form-check-label" for="editJavaAttribute4">
+                                    Assignment 1 - HTML/JS
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="editJavaAttribute5">
+                                <label class="form-check-label" for="editJavaAttribute5">
+                                    Assignment 2 - MVC
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="editAssignmentSubDateInput">Student's Submission Date</label>
+                            <input type="date" class="form-control" id="editAssignmentSubDateInput">
+                        </div>
+                        <div class="form-group">
+                            <label for="editAssignmentSubTimeInput">Student's Submission Time</label>
+                            <input type="time" class="form-control" id="editAssignmentSubTimeInput">
+                        </div>
+                        <div class="form-group">
+                            <label for="editAssignmentOralMarkInput">Student's Oral Mark</label>
+                            <input type="number" min="0" max="100" class="form-control"
+                                id="editAssignmentOralMarkInput">
+                        </div>
+                        <div class="form-group">
+                            <label for="editAssignmentTotalMarkInput">Student's Total Mark</label>
+                            <input type="number" min="0" max="100" class="form-control"
+                                id="editAssignmentTotalMarkInput">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Discart
+                                Changes</button>
+                            <button class="btn btn-primary" type="submit">Update</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CSHARP - Edit Assignments per Student Modal -->
+    <div class="modal fade" id="editCsharpArrtibuteModal" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="editCourseScrollableTitle">Edit Student's Assignment</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form data-toggle="validator">
+                        <div class="form-group">
+                            <label for="courseTitleInput">Assignments</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="editCsharpAttribute1">
+                                <label class="form-check-label" for="editCsharpAttribute1">
+                                    Individual Project - Part A
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="editCsharpAttribute2">
+                                <label class="form-check-label" for="editCsharpAttribute2">
+                                    Individual Project - Part B
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="editCsharpAttribute3">
+                                <label class="form-check-label" for="editCsharpAttribute3">
+                                    Assignment 1 - HTML/JS
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="editCsharpAttribute4">
+                                <label class="form-check-label" for="editCsharpAttribute4">
+                                    Assignment 2 - .NET
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="editAssignmentSubDateInput">Student's Submission Date</label>
+                            <input type="date" class="form-control" id="editAssignmentSubDateInput">
+                        </div>
+                        <div class="form-group">
+                            <label for="editAssignmentSubTimeInput">Student's Submission Time</label>
+                            <input type="time" class="form-control" id="editAssignmentSubTimeInput">
+                        </div>
+                        <div class="form-group">
+                            <label for="editAssignmentOralMarkInput">Student's Oral Mark</label>
+                            <input type="number" min="0" max="100" class="form-control"
+                                id="editAssignmentOralMarkInput">
+                        </div>
+                        <div class="form-group">
+                            <label for="editAssignmentTotalMarkInput">Student's Total Mark</label>
+                            <input type="number" min="0" max="100" class="form-control"
+                                id="editAssignmentTotalMarkInput">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Discart
+                                Changes</button>
+                            <button class="btn btn-primary" type="submit">Update</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JAVA - View Assignments per Student per Course Modal -->
+    <div class="modal fade" id="viewJavaAssignmentsModal" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="editCourseScrollableTitle">Assignments</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <table class="table">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th colspan="2">Title</th>
+                                <th colspan="1">Student Submission Date</th>
+                                <th colspan="1">Oral Mark</th>
+                                <th colspan="1">Total Mark</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Individual Project - Part A</td>
+                                <td>01-01-2020 22:00:00</td>
+                                <td>20</td>
+                                <td>100</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Individual Project - Part B </td>
+                                <td>29-01-2020 22:00:00</td>
+                                <td>20</td>
+                                <td>99</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Assignment 1 - HTML/JS</td>
+                                <td>14-01-2020 22:00:00</td>
+                                <td>20</td>
+                                <td>100</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">4</th>
+                                <td>Assignment 2 - MVC</td>
+                                <td>Not Turned In</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CSHARP - View Assignments per Student per Course Modal -->
+    <div class="modal fade" id="viewCsharpAssignmentsModal" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="editCourseScrollableTitle">Assignments</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <table class="table">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th colspan="2">Title</th>
+                                <th colspan="1">Student Submission Date</th>
+                                <th colspan="1">Oral Mark</th>
+                                <th colspan="1">Total Mark</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Individual Project - Part A</td>
+                                <td>12-02-2020 22:00:00</td>
+                                <td>20</td>
+                                <td>95</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Individual Project - Part B </td>
+                                <td>Not Turned In</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Assignment 1 - HTML/JS</td>
+                                <td>Not Turned In</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">4</th>
+                                <td>Assignment 2 - .NET</td>
+                                <td>Not Turned In</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Delete Student Affirmation Modal -->
+    <div class="modal fade" id="deleteAttributeModal" tabindex="-1" role="dialog" aria-labelledby="deleteAttributeModal"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Are you sure you want to DELETE this Student from the Course?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-danger">Delete</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Delete Course Affirmation Modal -->
+    <div class="modal fade" id="deleteCourseModal" tabindex="-1" role="dialog" aria-labelledby="deleteCourseModal"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Are you sure you want to DELETE the association between this Course and ALL the Students?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-danger">Delete</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+<script src="../JS/script.js"></script>
+
+</html>

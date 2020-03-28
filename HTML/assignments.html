@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Assignments</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/75e9bfdda5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="../CSS/attributestylesheet.css">
+</head>
+
+<body>
+    <!-- Navbar top-->
+    <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-info mb-1 pt-1 pb-1 shadow">
+        <div class="flex-row d-flex">
+            <button type="button" class="navbar-toggler mr-2" data-toggle="offcanvas"
+                title="Toggle responsive left sidebar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="../index.html" title="Private School">Private School</a>
+        </div>
+    </nav>
+    <!-- Navbar side-->
+    <div class="container-fluid" id="main">
+        <div class="row row-offcanvas row-offcanvas-left">
+            <div class="col-md-2 col-lg-2 sidebar-offcanvas pl-0 sidebar d-md-block" id="sidebar" role="navigation">
+                <div class="sidebar-sticky pt-1 mt-3 mb-2 pb-2 bg-light shadow">
+                    <ul class="nav flex-column pl-0">
+                        <li class="nav-item"><a class="nav-link" href="../index.html">Dashboard</a></li>
+                        <li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>
+                        <li class="nav-item"><a class="nav-link" href="students.html">Students</a></li>
+                        <li class="nav-item"><a class="nav-link" href="trainers.html">Trainers</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="assignments.html">Assignments</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link sidebar-heading text-muted justify-content-between align-items-center px-3 mt-2 mb-1"
+                                href="#submenu1" data-toggle="collapse" data-target="#submenu1">Associations▾</a>
+                            <ul class="list-unstyled flex-column pl-3 show" id="submenu1" aria-expanded="true">
+                                <li class="nav-item"><a class="nav-link" href="trainers-per-course.html">Trainers per
+                                        Course</a></li>
+                                <li class="nav-item"><a class="nav-link" href="students-per-course.html">Students per
+                                        Course</a></li>
+                                <li class="nav-item"><a class="nav-link" href="assignments-per-course.html">Assignments
+                                        per Course</a></li>
+                                <li class="nav-item"><a class="nav-link"
+                                        href="assignments-per-student-per-course.html">Assignments per Student per
+                                        Course</a>
+                                </li>
+                            </ul>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Pane-->
+    <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+        <div
+            class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+            <h1 class="h2">Assignments</h1>
+        </div>
+        <div class="table-responsive">
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col"></th>
+                        <th scope="col">Title</th>
+                        <th scope="col">Submission Date</th>
+                        <th scope="col">Submission Time</th>
+                        <th scope="col">Oral Mark</th>
+                        <th scope="col">Total Mark</th>
+                        <th scope="col">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Individual Project - Part A (JAVA-PT-II)</td>
+                        <td>02-01-2020</td>
+                        <td>23:59</td>
+                        <td>20</td>
+                        <td>100</td>
+                        <td>
+                            <button type="button" class="btn btn-sm" data-toggle="modal"
+                                data-target="#editArrtibuteModal">
+                                <a class="text-secondary">
+                                    <i class="far fa-edit fa-lg "></i>
+                                </a>
+                            </button>
+                            <button type="button" class="btn btn-sm" data-toggle="modal"
+                                data-target="#deleteAttributeModal">
+                                <a class="text-secondary">
+                                    <i class="far fa-trash-alt fa-lg"></i>
+                                </a>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Individual Project - Part B (JAVA-PT-II)</td>
+                        <td>30-01-2020</td>
+                        <td>23:59</td>
+                        <td>20</td>
+                        <td>100</td>
+                        <td>
+                            <button type="button" class="btn btn-sm" data-toggle="modal"
+                                data-target="#editArrtibuteModal">
+                                <a class="text-secondary">
+                                    <i class="far fa-edit fa-lg "></i>
+                                </a>
+                            </button>
+                            <button type="button" class="btn btn-sm" data-toggle="modal"
+                                data-target="#deleteAttributeModal">
+                                <a class="text-secondary">
+                                    <i class="far fa-trash-alt fa-lg"></i>
+                                </a>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Assignment 1 - HTML/JS (JAVA-PT-II)</td>
+                        <td>14-02-2020</td>
+                        <td>23:59</td>
+                        <td>20</td>
+                        <td>100</td>
+                        <td>
+                            <button type="button" class="btn btn-sm" data-toggle="modal"
+                                data-target="#editArrtibuteModal">
+                                <a class="text-secondary">
+                                    <i class="far fa-edit fa-lg "></i>
+                                </a>
+                            </button>
+                            <button type="button" class="btn btn-sm" data-toggle="modal"
+                                data-target="#deleteAttributeModal">
+                                <a class="text-secondary">
+                                    <i class="far fa-trash-alt fa-lg"></i>
+                                </a>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>Assignment 2 - MVC (JAVA-PT-II)</td>
+                        <td>20-03-2020</td>
+                        <td>23:59</td>
+                        <td>20</td>
+                        <td>100</td>
+                        <td>
+                            <button type="button" class="btn btn-sm" data-toggle="modal"
+                                data-target="#editArrtibuteModal">
+                                <a class="text-secondary">
+                                    <i class="far fa-edit fa-lg "></i>
+                                </a>
+                            </button>
+                            <button type="button" class="btn btn-sm" data-toggle="modal"
+                                data-target="#deleteAttributeModal">
+                                <a class="text-secondary">
+                                    <i class="far fa-trash-alt fa-lg"></i>
+                                </a>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">5</th>
+                        <td>Assignment 1 - HTML/JS (C#-PT-II)</td>
+                        <td>14-02-2020</td>
+                        <td>23:59</td>
+                        <td>20</td>
+                        <td>100</td>
+                        <td>
+                            <button type="button" class="btn btn-sm" data-toggle="modal"
+                                data-target="#editArrtibuteModal">
+                                <a class="text-secondary">
+                                    <i class="far fa-edit fa-lg "></i>
+                                </a>
+                            </button>
+                            <button type="button" class="btn btn-sm" data-toggle="modal"
+                                data-target="#deleteAttributeModal">
+                                <a class="text-secondary">
+                                    <i class="far fa-trash-alt fa-lg"></i>
+                                </a>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">6</th>
+                        <td>Assignment 2 - .NET (C#-PT-II)</td>
+                        <td>20-03-2020</td>
+                        <td>23:59</td>
+                        <td>20</td>
+                        <td>100</td>
+                        <td>
+                            <button type="button" class="btn btn-sm" data-toggle="modal"
+                                data-target="#editArrtibuteModal">
+                                <a class="text-secondary">
+                                    <i class="far fa-edit fa-lg "></i>
+                                </a>
+                            </button>
+                            <button type="button" class="btn btn-sm" data-toggle="modal"
+                                data-target="#deleteAttributeModal">
+                                <a class="text-secondary">
+                                    <i class="far fa-trash-alt fa-lg"></i>
+                                </a>
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    </div>
+
+    <button type="button" class="btn btn-secondary btn-circle btn-lg bottom-right" data-toggle="modal"
+        data-target="#addNewArrtibuteModal">
+        <i class="fas fa-plus"></i>
+    </button>
+
+    <!-- Add New Assignment Modal -->
+    <div class="modal fade" id="addNewArrtibuteModal" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalScrollableTitle">Add New Assignment</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form data-toggle="validator">
+                        <div class="form-group">
+                            <label for="assignmentTitleInput">Title</label>
+                            <input type="text" class="form-control textOnly" id="assignmentTitleInput"
+                                placeholder="e.g. Assignment 1 - HTML/JS (JAVA-PT-II)" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="assignmentSubDateInput">Submission Date</label>
+                            <input type="date" class="form-control" id="assignmentSubDateInput" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="assignmentSubTimeInput">Submission Time</label>
+                            <input type="time" step="1" class="form-control" id="assignmentSubTimeInput" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="assignmentOralMarkInput">Oral Mark</label>
+                            <input type="number" min="0" max="100" class="form-control" id="assignmentOralMarkInput"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label for="assignmentTotalMarkInput">Total Mark</label>
+                            <input type="number" min="0" max="100" class="form-control" id="assignmentTotalMarkInput"
+                                required>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Discart</button>
+                            <button id="addNewAttr" class="btn btn-primary" type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Edit Assignment Modal -->
+    <div class="modal fade" id="editArrtibuteModal" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="editAssignmentScrollableTitle">Edit Assignment</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form data-toggle="validator">
+                        <div class="form-group">
+                            <label for="editAssignmentTitleInput">Title</label>
+                            <input type="text" class="form-control" id="editAssignmentTitleInput"
+                                placeholder="e.g. Assignment 1 - HTML/JS (JAVA-PT-II)" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="editAssignmentSubDateInput">Submission Date</label>
+                            <input type="date" class="form-control" id="editAssignmentSubDateInput" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="editAssignmentSubTimeInput">Submission Time</label>
+                            <input type="time" class="form-control" id="editAssignmentSubTimeInput" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="editAssignmentOralMarkInput">Oral Mark</label>
+                            <input type="number" min="0" max="100" class="form-control" id="editAssignmentOralMarkInput"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label for="editAssignmentTotalMarkInput">Total Mark</label>
+                            <input type="number" min="0" max="100" class="form-control"
+                                id="editAssignmentTotalMarkInput" required>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Discart Changes</button>
+                            <button id="updateBtn" class="btn btn-primary" type="submit">Update</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Delete Affirmation Modal -->
+    <div class="modal fade" id="deleteAttributeModal" tabindex="-1" role="dialog"
+        aria-labelledby="deleteAssignmentModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Are you sure you want to permanently DELETE this Assignment?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button id="deleteBtn" type="button" class="btn btn-danger">Delete</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+<script src="../JS/script.js"></script>
+
+</html>

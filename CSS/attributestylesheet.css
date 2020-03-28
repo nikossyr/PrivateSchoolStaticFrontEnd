@@ -1,0 +1,219 @@
+body {
+    font-size: .875rem;
+  }
+  
+  .feather {
+    width: 16px;
+    height: 16px;
+    vertical-align: text-bottom;
+  }
+  
+  /*
+   * Sidebar
+   */
+  
+  .sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100; /* Behind the navbar */
+    padding: 48px 0 0; /* Height of navbar */
+    box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+  }
+  
+  .sidebar-sticky {
+    position: relative;
+    top: 0;
+    height: calc(100vh - 60px);
+    padding-top: .5rem;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+  }
+  
+  @supports ((position: -webkit-sticky) or (position: sticky)) {
+    .sidebar-sticky {
+      position: -webkit-sticky;
+      position: sticky;
+    }
+  }
+  
+  .sidebar .nav-link {
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .sidebar .nav-link .feather {
+    margin-right: 4px;
+    color: #999;
+  }
+  
+  .sidebar .nav-link.active {
+    color: #007bff;
+  }
+  
+  .sidebar .nav-link:hover .feather,
+  .sidebar .nav-link.active .feather {
+    color: inherit;
+  }
+  
+  .sidebar-heading {
+    font-size: .75rem;
+    text-transform: uppercase;
+  }
+  
+  /*
+   * Content
+   */
+  
+  [role="main"] {
+    padding-top: 4rem; /* Space for fixed navbar */
+  }
+  
+  @media (min-width: 768px) {
+    [role="main"] {
+      padding-top: 3.5rem; /* Space for fixed navbar */
+    }
+  }
+  
+  /*
+   * Navbar
+   */
+  
+  .navbar-brand {
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    font-size: 1.5rem;
+    
+  }
+
+  .navbar-toggler{
+    background-color: rgba(0, 0, 0, .15);
+  }
+  
+  .navbar .form-control {
+    padding: .75rem 1rem;
+    border-width: 0;
+    border-radius: 0;
+  }
+  
+  .form-control-dark {
+    color: #fff;
+    background-color: rgba(255, 255, 255, .1);
+    border-color: rgba(255, 255, 255, .1);
+  }
+  
+  .form-control-dark:focus {
+    border-color: transparent;
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
+  }
+
+  td a + a {
+    padding-left: 0.5em;
+ } 
+
+ .bottom-right{
+    position:fixed;
+    bottom:2%;
+    right:2%;
+    margin:0;
+    padding:1em 1em;
+  }
+
+  .btn-circle {
+    width: 30px;
+    height: 30px;
+    padding: 6px 0px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.42857;
+  }
+
+  .btn-circle.btn-lg {
+    width: 50px;
+    height: 50px;
+    border-radius: 35px;
+    font-size: 18px;
+    line-height: 1.33;
+  }
+
+  body, html {
+    height:100%;
+  }
+  
+  /*
+   * Off Canvas sidebar at medium breakpoint
+   * --------------------------------------------------
+   */
+  @media screen and (max-width: 992px) {
+  
+    .row-offcanvas {
+      position: relative;
+      /* -webkit-transition: all 0.25s ease-out;
+      -moz-transition: all 0.25s ease-out;
+      transition: all 0.25s ease-out; */
+    }
+  
+    .row-offcanvas-left
+    .sidebar-offcanvas {
+      left: -33%;
+    }
+  
+    .row-offcanvas-left.active {
+      left: 33%;
+      margin-left: -6px;
+    }
+  
+    .sidebar-offcanvas {
+      position: absolute;
+      top: 0;
+      width: 33%;
+      height: 100%;
+    }
+  }
+  
+  /*
+   * Off Canvas wider at sm breakpoint
+   * --------------------------------------------------
+   */
+  @media screen and (max-width: 34em) {
+    .row-offcanvas-left
+    .sidebar-offcanvas {
+      left: -45%;
+    }
+  
+    .row-offcanvas-left.active {
+      left: 45%;
+      margin-left: -6px;
+    }
+    
+    .sidebar-offcanvas {
+      width: 45%;
+    }
+  }
+  
+  .card {
+      overflow:hidden;
+  }
+  
+  .card-body .rotate {
+      z-index: 8;
+      float: right;
+      height: 100%;
+  }
+  
+  .card-body .rotate i {
+      color: rgba(20, 20, 20, 0.15);
+      position: absolute;
+      left: 0;
+      left: auto;
+      right: -10px;
+      bottom: 0;
+      display: block;
+      -webkit-transform: rotate(-44deg);
+      -moz-transform: rotate(-44deg);
+      -o-transform: rotate(-44deg);
+      -ms-transform: rotate(-44deg);
+      transform: rotate(-44deg);
+  }
