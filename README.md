@@ -1,5 +1,7 @@
 # Private School - Static Front End
 
+The live-preview of the website can be found [here](https://nikossyr.github.io/PrivateSchoolStaticFrontEnd/).
+
 This project provides a static front end implementation of the previously developped [Private School Java](https://github.com/nikossyr/PrivateSchoolStructureDBConnection) project. 
 
 There is no actual functionality as database and server connection but it is navigationally adequate and provide add, edit, delete actions only for the current page lifecycle in browser.
